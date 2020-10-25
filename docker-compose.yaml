@@ -27,7 +27,7 @@ services:
       - HUB_HOST=hub
       - MODULE=testng.xml
     volumes:
-      - ./result1:/usr/share/udemy/test-output  
+      - ./output/result1:/usr/share/udemy/test-output  
   payment-module2:
     image: yedudocker/newseleniumdocker
     depends_on:
@@ -38,4 +38,4 @@ services:
       - HUB_HOST=hub
       - MODULE=testng.xml
     volumes:
-      - ./result2:/usr/share/udemy/test-output    
+      - ./output/result2:/usr/share/udemy/test-output    
